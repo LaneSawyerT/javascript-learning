@@ -1,5 +1,7 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events, } = Matter;
 
+
+
 // Might need to change the cell back to 5. Delete this comment later
 const cellsHorizontal = 10;
 const cellsVertical = 7;
@@ -56,9 +58,7 @@ const shuffle = arr => {
 };
 
 const grid = Array(cellsVertical).fill(null).map(() => Array(cellsHorizontal).fill(false));
-
 const verticals = Array(cellsVertical).fill(null).map(() => Array(cellsHorizontal - 1).fill(false));
-
 const horizontals = Array(cellsVertical - 1).fill(null).map(() => Array(cellsHorizontal).fill(false));
 
 const startRow = Math.floor(Math.random() * cellsVertical);
@@ -119,6 +119,7 @@ const stepThroughCell = (row, column) => {
 stepThroughCell(startRow, startColumn);
 
 
+// Walls that are created
 horizontals.forEach((row, rowIndex) => {
   row.forEach((open, columnIndex) => {
     if (open) {
@@ -142,6 +143,7 @@ horizontals.forEach((row, rowIndex) => {
   });
 });
 
+// Walls that are created
 verticals.forEach((row, rowIndex) => {
     row.forEach((open, columnIndex) => {
         if(open){
@@ -235,3 +237,4 @@ Events.on(engine, 'collisionStart', event => {
         }
     });
 });
+
