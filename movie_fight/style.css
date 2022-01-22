@@ -31,6 +31,11 @@ figure .image img {
   justify-content: space-around;
 }
 
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -40,4 +45,8 @@ figure .image img {
 .dropdown-item img {
   height: 50px;
   margin-right: 10px;
+}
+
+*, ::before, ::after {
+  box-sizing: initial !important;
 }
