@@ -1,5 +1,5 @@
 Javascript-Learning:
-This project is a collection of the things I have learned from The Moden JavaScript Bootcamp course.
+This project is a collection of some of the things I have learned from The Moden JavaScript Bootcamp course.
 
 
 Clock Timer:
