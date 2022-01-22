@@ -1,8 +1,5 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events, } = Matter;
 
-
-
-// Might need to change the cell back to 5. Delete this comment later
 const cellsHorizontal = 10;
 const cellsVertical = 7;
 const width = window.innerWidth;

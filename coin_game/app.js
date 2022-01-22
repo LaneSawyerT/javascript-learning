@@ -1,3 +1,4 @@
+// When touching will redirect player
 function isTouching(a, b) {
 	const aRect = a.getBoundingClientRect();
 	const bRect = b.getBoundingClientRect();
@@ -14,6 +15,7 @@ function isTouching(a, b) {
 const avatar = document.querySelector('#player');
 const coin = document.querySelector('#coin');
 
+// Key functions
 window.addEventListener('keyup', function(e){
     if(e.key === 'ArrowDown' || e.key === 'Down')  {
         const currTop = extractPos(avatar.style.top);
@@ -40,6 +42,7 @@ if(!pos) return 100;
  return parseInt(pos.slice(0, -2));
 };
 
+// Re-Directs the coin
 const moveCoin = () => {
    const y = Math.floor(Math.random() * window.innerHeight);
    const x = Math.floor(Math.random() * window.innerWidth);

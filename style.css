@@ -1,0 +1,50 @@
+body{
+  font-family:'Fira Code', 'Courier New', Courier, monospace;
+  align-content:center;
+  max-width:600px;
+  margin: auto;
+  padding: 1em;
+  background: #F6F7EB;
+}
+
+h1{
+  font-family: 'Outfit', sans-serif;
+  font-weight:bold;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+mark{
+  padding:3px;
+  border: solid black 1px;
+  box-shadow: black 2px 2px;
+}
+
+.card:hover{
+  background:yellow;
+}
+
+.card{
+  width: auto;
+  border:solid black 3px;
+  padding: 0.5em;
+  margin: 2em 0em 2em 0em;
+  box-shadow: black 5px 5px;
+  transition: all 400ms;
+  font: bold;
+
+}
+
+.card-table{
+  display: grid;
+}
+
+#ryan{
+  padding:3px;
+  border: solid black 1px;
+  box-shadow: black 3px 3px;
+  background: yellow;
+}
